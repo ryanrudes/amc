@@ -7,10 +7,10 @@ import os
 import shutil
 import numpy as np
 
-if os.path.exists("~/Downloads/AMC/"):
-    shutil.rmtree("~/Downloads/AMC/")
-os.mkdir("~/Downloads/AMC/")
-os.mkdir("~/Downloads/AMC/10/")
+if os.path.exists("./AMC/"):
+    shutil.rmtree("./AMC/")
+os.mkdir("./AMC/")
+os.mkdir("./AMC/10/")
 
 options = Options()
 options.add_argument("--headless")
@@ -18,10 +18,10 @@ options.add_argument("--window-size=1920,1080")
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option('useAutomationExtension', False)
 
-browser = webdriver.Chrome(executable_path = "~/Downloads/chromedriver", options = options)
+browser = webdriver.Chrome(executable_path = "./chromedriver", options = options)
 
 for year in range(2002, 2021):
-    year_path = "~/Downloads/AMC/10/%d/" % year
+    year_path = "./AMC/10/%d/" % year
     os.mkdir(year_path)
     for exam in 'AB':
         exam_path = year_path + exam + '/'
@@ -39,7 +39,7 @@ for year in range(2002, 2021):
                 ims = []
                 while True:
                     element = next(elements)
-                    if element.tag_name == "h2" and "Solution" in element.text:
+                    if element.tag_name == "h2":
                         break
                     location = element.location
                     size = element.size
