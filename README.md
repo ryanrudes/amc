@@ -9,3 +9,5 @@ This repository contains problems from AMC 10, but a slight modification of the 
 There may be a few problems that appear to be missing from the data; this is due to the fact that the AMC repeats contest problems every so often, so some URL's are redirected to, say the AMC 12 when requesting an AMC 10 problem. These missing problems can be found under some AMC 12 competition.
 
 Possible changes in the AoPS website in the future may render this code dysfunctional.
+
+When running this code, ensure that you have downloaded a copy of the [Chromedriver executable](https://chromedriver.chromium.org/downloads) and its path is *~/Downloads/chromedriver*.
