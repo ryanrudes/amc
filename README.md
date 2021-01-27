@@ -1,6 +1,6 @@
 # American Mathematics Competition Problems (MAA AMC)
 
-**I do not claim the rights to this content; the MAA releases past contest problems on the AoPS website, found [here](https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions)**
+**I do not claim the rights to this content; the MAA publicly releases past contest problems on the AoPS website, found [here](https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions)**
 
 **Note**: If you have created a directory named *~/Downloads/AMC/* in prior, the code will erase its content, overwriting it with datascraped AMC problems.
 
